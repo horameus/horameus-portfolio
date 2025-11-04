@@ -1,0 +1,28 @@
+@keyframes PopIn {
+    0% {
+        transform: scale(0.95);
+        text-shadow:
+            0 0 2px #ff4040,
+            0 0 5px #ff3b3b,
+            0 0 10px #e60602,
+            0 0 15px #e60602,
+            0 0 20px #e60602,
+            0 0 25px #e60602,
+            0 0 30px #e60602;
+    }
+    100% {
+        transform: scale(1);
+        text-shadow:
+            0 0 20px #ff9a9a,
+            0 0 30px #e60602,
+            0 0 40px #e60602,
+            0 0 50px #e60602,
+            0 0 60px #e60602,
+            0 0 70px #e60602,
+            0 0 80px #e60602;
+    }
+}
+
+.animation {
+    animation: PopIn 3s ease-in-out 3s infinite normal none;
+}
