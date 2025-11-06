@@ -3,6 +3,7 @@ import { PaletteOptions } from '@mui/material/styles';
 export const palette: Partial<PaletteOptions> = {
     background: {
         paper: '#FFFFFF',
+        default: '#0E0E0E',
     },
     text: {
         primary: '#FFFFFF',

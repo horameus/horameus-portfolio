@@ -1,15 +1,14 @@
 import { ThemeProvider } from '@mui/system';
 import { theme } from './utils';
-import { AnimationTest, BackgroundView } from './components';
+import { IntroTitle, BackgroundView } from './components';
+import { IntroText } from './components/animations/intro/IntroText';
 
-function App() {
+export function App() {
     return (
         <ThemeProvider theme={theme}>
             <BackgroundView>
-                <AnimationTest />
+                <IntroText />
             </BackgroundView>
         </ThemeProvider>
     );
 }
-
-export default App;

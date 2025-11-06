@@ -1,1 +1,1 @@
-export * from './animationTest';
+export * from './intro';

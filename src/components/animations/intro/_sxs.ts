@@ -8,7 +8,7 @@ export function useSxs() {
             height: '100vh',
             width: '100vw',
         },
-        AnimationText: {
+        IntroTitle: {
             fontSize: '10rem',
         },
     };
