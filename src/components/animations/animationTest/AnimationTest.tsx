@@ -1,10 +1,12 @@
-import { Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import './animation.css';
 
 export function AnimationTest() {
     return (
-        <Typography variant="h1" color="primary" className="animation">
-            HORAMEUS
-        </Typography>
+        <Stack justifyContent="center" alignItems="center" height="100vh" width="100vw">
+            <Typography variant="h1" color="primary" className="animation">
+                HORAMEUS
+            </Typography>
+        </Stack>
     );
 }

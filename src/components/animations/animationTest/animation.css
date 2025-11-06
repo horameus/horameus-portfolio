@@ -1,28 +1,28 @@
 @keyframes PopIn {
     0% {
-        transform: scale(0.95);
+        transform: scale(1, 3);
         text-shadow:
             0 0 2px #ff4040,
-            0 0 5px #ff3b3b,
-            0 0 10px #e60602,
-            0 0 15px #e60602,
-            0 0 20px #e60602,
-            0 0 25px #e60602,
-            0 0 30px #e60602;
+            0 0 5px #570100,
+            0 0 10px #570100,
+            0 0 15px #570100,
+            0 0 20px #570100,
+            0 0 25px #570100,
+            0 0 30px #570100;
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.05, 3.5);
         text-shadow:
-            0 0 20px #ff9a9a,
-            0 0 30px #e60602,
-            0 0 40px #e60602,
-            0 0 50px #e60602,
-            0 0 60px #e60602,
-            0 0 70px #e60602,
-            0 0 80px #e60602;
+            0 0 20px #ad0404,
+            0 0 30px #570100,
+            0 0 40px #570100,
+            0 0 50px #570100,
+            0 0 60px #570100,
+            0 0 70px #570100,
+            0 0 80px #570100;
     }
 }
 
 .animation {
-    animation: PopIn 3s ease-in-out 3s infinite normal none;
+    animation: PopIn 5s ease-in-out 3s infinite normal none;
 }
