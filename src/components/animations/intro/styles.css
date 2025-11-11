@@ -8,3 +8,7 @@
 .introTitle {
     font-size: '10rem';
 }
+
+.none {
+    display: none;
+}

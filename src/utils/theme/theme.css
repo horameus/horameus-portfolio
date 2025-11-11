@@ -29,7 +29,6 @@ body {
 /* ====== PAPER ELEMENTS ====== */
 .paper {
     background-color: var(--color-text-secondary);
-    color: var(--color-text-primary);
 }
 
 /* ====== TEXT ====== */
