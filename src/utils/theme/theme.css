@@ -1,0 +1,73 @@
+/* ====== THEME VARIABLES ====== */
+:root {
+    /* Backgrounds */
+    --color-background-paper: #ffffff;
+    --color-background-default: #0e0e0e;
+
+    /* Text colors */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #000000;
+
+    /* Brand colors */
+    --color-primary-main: #e60602;
+    --color-secondary-main: #ae36ff;
+
+    /* Typography */
+    --font-body: 'Lexend', Arial, sans-serif;
+    --font-heading: 'BBH Sans Hegarty', Arial, sans-serif;
+}
+
+/* ====== GLOBAL STYLES ====== */
+body {
+    background-color: var(--color-background-default);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== PAPER ELEMENTS ====== */
+.paper {
+    background-color: var(--color-text-secondary);
+    color: var(--color-text-primary);
+}
+
+/* ====== TEXT ====== */
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+/* ====== HEADINGS ====== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: var(--font-heading);
+    color: var(--color-text-primary);
+}
+
+/* ====== PRIMARY / SECONDARY COLORS ====== */
+.primary {
+    color: var(--color-primary-main);
+}
+
+.secondary {
+    color: var(--color-secondary-main);
+}
+
+.bg-primary {
+    background-color: var(--color-primary-main);
+    color: var(--color-text-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary-main);
+    color: var(--color-text-primary);
+}

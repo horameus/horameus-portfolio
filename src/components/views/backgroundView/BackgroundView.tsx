@@ -5,5 +5,9 @@ import { useSxs } from './_sxs';
 export function BackgroundView({ children }: BackgroundViewProps) {
     const sxs = useSxs();
 
-    return <Stack sx={sxs.BackgroundView}>{children}</Stack>;
+    return (
+        <Stack sx={sxs.BackgroundView} className="paper">
+            {children}
+        </Stack>
+    );
 }
