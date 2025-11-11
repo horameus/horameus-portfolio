@@ -1,5 +1,9 @@
 /* ====== THEME VARIABLES ====== */
 :root {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
     /* Backgrounds */
     --color-background-paper: #ffffff;
     --color-background-default: #0e0e0e;
