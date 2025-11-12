@@ -1,4 +1,4 @@
-@keyframes IntroTitle {
+@keyframes Animation3 {
     0% {
         transform: scale(1, 3.5);
         text-shadow:
@@ -23,8 +23,14 @@
     }
 }
 
-.animationIntroTitle {
-    animation: IntroTitle 5s ease-in-out 3s infinite normal none;
+.animation1 {
+    animation: IntroTitle 2s ease-in-out 1s infinite normal none;
 }
 
+.animation2 {
+    animation: IntroTitle 2s ease-in-out 3.5s infinite normal none;
+}
 
+.animation3 {
+    animation: Animation3 5s ease-in-out 6s infinite normal none;
+}
