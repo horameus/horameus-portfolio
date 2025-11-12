@@ -1,14 +1,10 @@
-.animationContainer {
-    justify-content: 'center';
-    align-items: 'center';
-    height: '100vh';
-    width: '100vw';
-}
+/* .animationContainer {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+} */
 
 .introTitle {
-    font-size: '10rem';
-}
-
-.none {
-    display: none;
+    font-size: 10rem;
 }
