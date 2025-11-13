@@ -1,28 +1,34 @@
 @keyframes Animation1 {
     0% {
+        opacity: 0;
         transform: scale(1, 1);
-        height: auto;
+    }
+    50% {
+        opacity: 1;
     }
     100% {
+        opacity: 0;
         transform: scale(1.05, 1.05);
-        height: 0;
     }
 }
 
 @keyframes Animation2 {
     0% {
+        opacity: 0;
         transform: scale(1, 1);
-        height: auto;
+    }
+    50% {
+        opacity: 1;
     }
     100% {
+        opacity: 0;
         transform: scale(1.05, 1.05);
-        height: 0;
     }
 }
 
 @keyframes Animation3 {
     0% {
-        height: auto;
+        opacity: 0;
         transform: scale(1, 3.5);
         text-shadow:
             0 0 2px #ff4040,
@@ -33,8 +39,14 @@
             0 0 25px #570100,
             0 0 30px #570100;
     }
+    2% {
+        opacity: 1;
+    }
+    98% {
+        opacity: 1;
+    }
     100% {
-        height: 0;
+        opacity: 0;
         transform: scale(1.05, 4);
         text-shadow:
             0 0 20px #ad0404,
@@ -47,20 +59,27 @@
     }
 }
 
+.animation1,
+.animation2,
+.animation3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    /* opacity: 0; */
+}
+
 .animation1 {
-    height: 0;
-    overflow: hidden;
     animation: Animation1 3s ease-in-out 1s 1 normal none;
 }
 
 .animation2 {
-    height: 0;
-    overflow: hidden;
     animation: Animation2 3s ease-in-out 4.5s 1 normal none;
 }
 
 .animation3 {
-    height: 0;
-    overflow: hidden;
     animation: Animation3 5s ease-in-out 8s 1 normal none;
 }
