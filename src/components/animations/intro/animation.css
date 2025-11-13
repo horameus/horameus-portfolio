@@ -50,26 +50,20 @@
         transform: scale(1.05, 4);
         text-shadow:
             0 0 20px #ad0404,
-            0 0 30px #570100,
-            0 0 40px #570100,
-            0 0 50px #570100,
-            0 0 60px #570100,
-            0 0 70px #570100,
-            0 0 80px #570100;
+            0 0 30px #7a0200,
+            0 0 40px #7a0200,
+            0 0 70px #7a0200,
+            0 0 100px #7a0200,
+            0 0 120px #7a0200,
+            0 0 140px #7a0200;
     }
 }
 
 .animation1,
 .animation2,
 .animation3 {
-    text-align: center;
     position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translateY(-50%);
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 .animation1 {
