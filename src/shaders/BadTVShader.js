@@ -36,7 +36,7 @@
  *
  */
 
-THREE.BadTVShader = {
+export const BadTVShader = {
     uniforms: {
         tDiffuse: { type: 't', value: null },
         time: { type: 'f', value: 0.0 },

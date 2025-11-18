@@ -1,14 +1,15 @@
+import { BadTVShader } from 'src/shaders/BadTVShader';
+import { StaticShader } from 'src/shaders/StaticShader';
 import * as THREE from 'three';
-import { Stats } from 'three-stdlib';
-import { EffectComposer } from 'three-stdlib';
-import { RenderPass } from 'three-stdlib';
+import { CopyShader, EffectComposer, FilmShader, RGBShiftShader, RenderPass, ShaderPass } from 'three-stdlib';
+import { GUI } from 'dat.gui';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
 
 export function BadTV() {
     //Bad TV Shader Demo
     //Using Three.js r.75
     //by Felix Turner / www.airtight.cc / @felixturner
 
-    var renderer;
     var composer;
     var shaderTime = 0;
     var badTVParams, badTVPass;
@@ -57,18 +58,18 @@ export function BadTV() {
         container.appendChild(stats.dom);
 
         //init renderer
-        renderer = new THREE.WebGLRenderer();
+        const renderer = new THREE.WebGLRenderer();
         renderer.setSize(800, 600);
         document.body.appendChild(renderer.domElement);
 
         //POST PROCESSING
         //Create Shader Passes
-        renderPass = new THREE.RenderPass(scene, camera);
-        badTVPass = new THREE.ShaderPass(THREE.BadTVShader);
-        rgbPass = new THREE.ShaderPass(THREE.RGBShiftShader);
-        filmPass = new THREE.ShaderPass(THREE.FilmShader);
-        staticPass = new THREE.ShaderPass(THREE.StaticShader);
-        copyPass = new THREE.ShaderPass(THREE.CopyShader);
+        const renderPass = new RenderPass(scene, camera);
+        const badTVPass = new ShaderPass(BadTVShader);
+        const rgbPass = new ShaderPass(RGBShiftShader);
+        const filmPass = new ShaderPass(FilmShader);
+        const staticPass = new ShaderPass(StaticShader);
+        const copyPass = new ShaderPass(CopyShader);
 
         //set shader uniforms
         filmPass.uniforms.grayscale.value = 0;
@@ -102,7 +103,7 @@ export function BadTV() {
             nIntensity: 0.4,
         };
 
-        gui = new dat.GUI();
+        const gui = new GUI();
 
         gui.add(badTVParams, 'mute').onChange(onToggleMute);
 
